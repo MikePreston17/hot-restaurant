@@ -10,6 +10,15 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
+//defining reservations
+var reservations = [
+  {
+    routeName: "kennedy",
+    name: "Morgan Kennedy",
+    qty: 2, //as in "table for 2" in this case
+  }
+];
+
 // Routes
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "tables.html"));
