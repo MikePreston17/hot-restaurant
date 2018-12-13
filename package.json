@@ -1,0 +1,23 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "A restaraunt reservation express app",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikePreston17/hot-restaurant.git"
+  },
+  "author": "Mike Preston, Brett Davis, Morgan Kennedy, Jessica Oliver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikePreston17/hot-restaurant/issues"
+  },
+  "homepage": "https://github.com/MikePreston17/hot-restaurant#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

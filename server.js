@@ -44,7 +44,7 @@ app.get("/api/reservations/:reservation", function(req, res) {
 app.post("/api/reservations", function(req, res) {
   var newreservation = req.body;
 
-  //use RegEx pattern to remove spaces? Not sure its necessary.
+  //use RegEx pattern to remove spaces? Not sure it's necessary.
 
   console.log(newreservation);
 
@@ -57,6 +57,3 @@ app.post("/api/reservations", function(req, res) {
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
-
-
-//test comment delete me later
