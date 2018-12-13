@@ -10,7 +10,11 @@ app.use(express.json());
 
 // Routes
 app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "view.html"));
+});
 
+app.get("/add", function(req, res) {
+  res.sendFile(path.join(__dirname, "add.html"));
 });
 
 // Displays all characters
@@ -37,6 +41,8 @@ app.get("/api/reservations/:reservation", function(req, res) {
 // Create New Reservations - takes in JSON input
 app.post("/api/reservations", function(req, res) {
   var newreservation = req.body;
+
+  //use RegEx pattern to remove spaces? Not sure its necessary.
 
   console.log(newreservation);
 
