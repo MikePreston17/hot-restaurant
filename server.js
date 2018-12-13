@@ -12,11 +12,11 @@ app.use(express.json());
 
 // Routes
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
+  res.sendFile(path.join(__dirname, "tables.html"));
 });
 
 app.get("/add", function(req, res) {
-  res.sendFile(path.join(__dirname, "add.html"));
+  res.sendFile(path.join(__dirname, "reserve.html"));
 });
 
 // Displays all characters
